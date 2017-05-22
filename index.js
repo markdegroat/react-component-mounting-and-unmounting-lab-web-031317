@@ -1,7 +1,7 @@
-const React = require('react');
-const ReactDOM = require('react-dom');
 
-const Game = require('./components/Game');
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Game from './components/Game'
 
 ReactDOM.render(
   <Game />,

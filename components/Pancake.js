@@ -49,6 +49,14 @@ export default class Pancake extends React.Component {
     this.props.takeItOff(id, status);
   }
 
+  componentDidMount(){
+    this.startInterval()
+  }
+
+  componentWillUnmount(){
+    this.cleanUpInterval()
+  }
+
   constructor(props) {
     super(props);
     this.state = {

@@ -36,6 +36,11 @@ export default class Game extends React.Component {
     };
     this.addPancake = this.addPancake.bind(this);
     this.takeItOff = this.takeItOff.bind(this);
+    this.setCurrentTime = this.setCurrentTime.bind(this);
+  }
+
+  componentWillMount(){
+    this.setCurrentTime();
   }
 
   render() {
